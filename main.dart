@@ -43,7 +43,7 @@ class _StockPageState extends State<StockPage> {
 
   // Función para obtener datos de la API de Alpha Vantage
   Future<Map<String, dynamic>> fetchStockData(String symbol) async {
-    final apiKey = 'B8KCIMNB3OC25QUX'; // Clave API de Alpha Vantage, ¡REEMPLAZAR CON LA PROPIA!
+    final apiKey = 'PON TU API AQUI'; // Clave API de Alpha Vantage, ¡REEMPLAZAR CON LA PROPIA!
     final url = Uri.parse(
         'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=$symbol&apikey=$apiKey'); // Construye la URL de la API
     final response = await http.get(url); // Realiza una solicitud GET a la API
